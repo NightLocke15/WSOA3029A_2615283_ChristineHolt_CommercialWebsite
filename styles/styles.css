@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
+
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 3px 2px rgb(183, 183, 183));
+    
+}
+
+body {
+    font-family: "Life Savers", serif;
+}
+
+.title {
+    flex: 80%;
+    padding: 0.2em;
+    line-height: 1;
+    font-size: 35px;
+    font-weight: bold;
+    color: #701F41;
+}
+
+nav {
+    flex: 20%;
+}
+
+.navigation-buttons {
+    display: flex;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
+
+.nav-button {
+    flex: 1;
+    background-color: #ffffff;
+    border: #ffffff;
+    font-family: "Life Savers", serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #701F41;
+    padding: 5px;
+}
+
+.nav-button:hover {
+    background-color: #E77373;
+    color: #ffffff;
+    border-radius: 4px;
+}
