@@ -30,22 +30,40 @@ nav {
 
 .navigation-buttons {
     display: flex;
-    padding: 0.5em;
+    justify-content: space-between;
+    padding: 0.5em 0.5em;
     margin-top: 0.5em;
 }
 
-.nav-button {
+#otherButton {
     flex: 1;
+    text-decoration: none;
+    text-align: center;
     background-color: #ffffff;
-    border: #ffffff;
     font-family: "Life Savers", serif;
     font-weight: 700;
     font-size: 14px;
     color: #701F41;
     padding: 5px;
+    margin-right: 5px
 }
 
-.nav-button:hover {
+#currentButton {
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    background-color: #E77373;
+    color: #ffffff;
+    font-family: "Life Savers", serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#otherButton:hover {
+    text-decoration: none;
     background-color: #E77373;
     color: #ffffff;
     border-radius: 4px;
