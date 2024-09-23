@@ -1,8 +1,8 @@
 const menu = [
     {name: "Home", href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/index.html"},
-    {name: "Recipes", href: ""},
-    {name: "Articles", href: ""},
-    {name: "About", href: ""}
+    {name: "Recipes", href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipes/index.html"},
+    {name: "Articles", href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/index.html"},
+    {name: "About", href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/about/index.html"}
 ]
 
 const navList = document.querySelector(".navigation-buttons");
