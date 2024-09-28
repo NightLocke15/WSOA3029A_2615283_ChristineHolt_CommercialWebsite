@@ -13,7 +13,7 @@ const footerItems = [
     },
     {
         name: "Designs",
-        href: "/about/design/designs.html"
+        href: "/about/designs.html"
     }
 ]
 

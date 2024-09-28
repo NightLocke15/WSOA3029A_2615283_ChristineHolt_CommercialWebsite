@@ -29,13 +29,13 @@ injectSections();
 function injectSections () {
     let sections = homePageSections.map(function (section) {
         const { id, name, description, href, button } = section;
-        return `<article class="${id}Section">
-            <div class="sectionTitle" id="${id}">${name}</div>
+        return `<article id="section">
+            <div class="sectionTitle">${name}</div>
             <div class="descAndButt">
-            <p class="${id}Description">${description}</p>
+            <p id="description">${description}</p>
             <div class="separationLine"></div>
             <div class="button">
-            <a class="${id}Button" href="${href}">${button}</a>
+            <a class="buttonLink" href="${href}">${button}</a>
             </div>
             </div>
         </article>`
