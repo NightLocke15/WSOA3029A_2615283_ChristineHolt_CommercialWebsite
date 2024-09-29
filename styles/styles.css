@@ -209,11 +209,11 @@ nav {
     font-size: 20px;
     padding: 15px;
     border-radius: 40px;
+    transition: 0.5s;
 }
 
 .buttonLink:hover {
-    padding: 20px;
-    font-size: 22px;
+    padding: 15px 28px;
 }
 
 .separationLine {
@@ -249,5 +249,63 @@ footer {
     color: #ffffff;
     border-radius: 2px;
 }
+
+.pageSection {
+    margin-top: 6em;
+}
+
+.pageTitle {
+    font-size: 40px;
+    color: #701F41;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    outline: solid #701F41;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    border-radius: 40px;
+    padding: 2em 3em;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+}
+
+.aboutTitle {
+    flex: 10%;
+    font-family: "Life Savers", serif;
+    text-align: center;
+    font-size: 30px;
+    color: #701F41;
+    font-weight: bold;
+}
+
+.aboutCont {
+    flex: 70%;
+}
+
+.designButt {
+    flex: 20%;
+    font-family: "Roboto", sans-serif;
+    background-color: #701F41;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+}
+
+.designButt:hover {
+    padding: 15px 28px;
+}
+
 
 
