@@ -414,7 +414,7 @@ height: auto;
     outline: 1px solid #701F41;
 }
 
-.postPageSection {
+.postPageSection, .essayPageSection {
     margin-top: 6em;
 }
 
@@ -436,4 +436,28 @@ height: auto;
     margin-right: 7em;
     font-family: "Roboto", sans-serif;
     padding: 0px 20em 0px 0px;
+}
+
+.essayContent {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    outline: solid #701F41;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    border-radius: 40px;
+    padding: 2em 2em;
+    line-height: 1.5;
+    
+}
+
+.essaySubTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+figure {
+    font-size: 12px;
+    font-style: italic;
 }
