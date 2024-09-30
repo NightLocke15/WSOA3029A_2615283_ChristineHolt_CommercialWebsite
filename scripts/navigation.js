@@ -5,7 +5,7 @@ const menu = [
     {name: "Recipes", href: `${root}recipes/index.html`},
     {name: "Articles", href: `${root}articles/index.html`},
     {name: "About", href: `${root}about/index.html`},
-    {name: "Post", href: `${root}recipes/postARecipe.html`},
+    {name: "Post", href: `${root}recipesFile/postARecipe.html`},
 ]
 
 const navList = document.querySelector(".navigation-buttons");

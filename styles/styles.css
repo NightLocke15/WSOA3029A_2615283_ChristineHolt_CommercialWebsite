@@ -307,5 +307,108 @@ footer {
     padding: 15px 28px;
 }
 
+.recipesPageSection {
+    margin-top: 6em;
+    width: var(90vw);
+    display: grid;
+    grid-gap: 1rem;
+    margin: 4rem auto;
+    max-width: var(1120px);
+}
 
+.filters h5 {
+    font-weight: 500;
+    margin: 1.5rem 0 0.5rem;
+    font-size: 0.85rem;
+    font-family:"Roboto", sans-serif;
+    margin-left: 19em;
+}
 
+.mainSection {
+    display: flex;
+}
+
+.filters {
+    flex: 28%;
+}
+
+.searchInput {
+    padding: 0.5rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    border-color: #701F41;
+    letter-spacing: 1px;
+    margin-left: 18em;
+}
+
+.horizontalDivider {
+    background-color: #E77373;
+    height: 1px;
+    width: 12em;
+    margin-left: 16em;
+    margin-right: 10px;
+}
+
+.categoryButt {
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    background: transparent;
+    border-color: transparent;
+    letter-spacing: 1px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 0.85rem;
+    margin-left: 24em;
+    font-family:"Roboto", sans-serif;
+}
+
+.categoryButt:hover {
+background-color: #E77373;
+color: #ffffff;
+width: 131px;
+text-align: left;
+}
+
+.verticalLine {
+flex: 2%;
+display: inline-block;
+border-left: 3px solid #E77373;
+height: auto;
+}
+
+.recipesContainer {
+    display: grid; 
+    grid-template-columns: auto auto; 
+    flex: 70%;
+    margin-right: 20em;
+    margin-left: 1em;
+}
+
+.recipeLink {
+    width: 15em;
+    background-color: #ffffff;
+    outline: solid #E77373;
+    border-radius: 20px;
+    margin-bottom: 2em;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding: 1em;
+    transition: 0.1s;
+}
+
+.recipeLink:hover {
+    transform: scale(1.05);
+    outline: solid #701F41;
+}
+
+.recipeImage {
+    width: 170px;
+    height: 170px;
+    outline: 1px solid #E77373;
+}
+
+.recipeImage:hover {
+    outline: 1px solid #701F41;
+}

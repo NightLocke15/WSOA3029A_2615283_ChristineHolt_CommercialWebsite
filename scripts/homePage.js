@@ -17,7 +17,7 @@ const homePageSections = [
         id: "post",
         name: "Post a Recipe",
         description: "Want to add one of your delicious recipes to our archives? Shoot us a message with the ingredients, instructions and any notes and have your recipe between other great ones!",
-        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipes/postARecipe.html",
+        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/postARecipe.html",
         button: "Post a Recipe"
     }
 ]

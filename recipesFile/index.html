@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script type="module"> import { navigationBar } from "../scripts/navigation.js" 
+        navigationBar("Recipes") </script>
+</head>
+<body>
+    <header>
+        <a class="title" href="/index.html">STEP 1</a>
+        <nav>
+            <section class="navigation-buttons"></section>
+        </nav>
+    </header>
+    
+    <section class="recipesPageSection">
+        <div class="pageTitle">Recipes</div>
+        <div class="mainSection">
+            <section class="filters">
+                <form class="input-form">
+                    <input type="text" class="searchInput" placeholder="search..." />
+                </form>
+                
+                <h5>Meal Type</h5>
+                <div class="horizontalDivider"></div>
+                <article class="categories">
+                <!--<button class="categoryButt" data-id = "">all</button>
+              <button class="categoryButt" data-id = "">ikea</button>
+              <button class="categoryButt" data-id = "">marcos</button>-->
+                </article>
+            </section>
+        
+        
+            <div class="verticalLine"></div>
+            <section class="recipesContainer">
+
+            </section>
+        </div>
+    </section>
+    <footer></footer>
+    <script type="module" src="../scripts/recipesLink.js"></script>
+    <script src="../scripts/footer.js"></script>
+</body>
+</html>
