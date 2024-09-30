@@ -371,7 +371,7 @@ width: 131px;
 text-align: left;
 }
 
-.verticalLine {
+.verticalDivider {
 flex: 2%;
 display: inline-block;
 border-left: 3px solid #E77373;
@@ -396,6 +396,7 @@ height: auto;
     font-family: "Roboto", sans-serif;
     padding: 1em;
     transition: 0.1s;
+    cursor: pointer;
 }
 
 .recipeLink:hover {
@@ -411,4 +412,28 @@ height: auto;
 
 .recipeImage:hover {
     outline: 1px solid #701F41;
+}
+
+.postPageSection {
+    margin-top: 6em;
+}
+
+.instructionalSection {
+    display: flex;
+}
+
+.verticalLine {
+    flex: 30%;
+    display: inline-block;
+    border-right: 3px solid #E77373;
+    height: auto;
+    margin-left: 10em;
+}
+
+.postInstructions {
+    flex: 70%;
+    margin-left: 1.5em;
+    margin-right: 5em;
+    font-family: "Roboto", sans-serif;
+    padding: 0px 20em 0px 0px;
 }
