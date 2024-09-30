@@ -423,7 +423,7 @@ height: auto;
 }
 
 .verticalLine {
-    flex: 30%;
+    flex: 40%;
     display: inline-block;
     border-right: 3px solid #E77373;
     height: auto;
@@ -431,9 +431,9 @@ height: auto;
 }
 
 .postInstructions {
-    flex: 70%;
+    flex: 60%;
     margin-left: 1.5em;
-    margin-right: 5em;
+    margin-right: 7em;
     font-family: "Roboto", sans-serif;
     padding: 0px 20em 0px 0px;
 }

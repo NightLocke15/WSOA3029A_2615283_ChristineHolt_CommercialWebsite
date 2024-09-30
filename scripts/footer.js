@@ -1,19 +1,21 @@
+const root = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/"
+
 const footerItems = [
     {
         name: "About",
-        href: "/about/index.html"
+        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/about/index.html"
     },
     {
         name: "Recipes",
-        href: "/recipes/index.html"
+        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/index.html"
     },
     {
         name: "Articles",
-        href: "/articles/index.html"
+        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/index.html"
     },
     {
         name: "Designs",
-        href: "/about/designs.html"
+        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/about/designs.html"
     }
 ]
 
