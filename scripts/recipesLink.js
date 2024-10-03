@@ -66,6 +66,7 @@ function injectRecipes(recipes) {
 
     allRecipeLinks.forEach(function (recipeLink) {
         recipeLink.addEventListener('click', function() {
+            window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
             let identity = event.currentTarget.id;
             recipeResult = recipes.filter(function (recipe) {
                 if (recipe.id === identity) {
@@ -83,7 +84,7 @@ function injectRecipes(recipes) {
                     </section>"`;
                 }
             })
-            //window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
+            
         });
     })
 }
