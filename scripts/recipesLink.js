@@ -5,6 +5,8 @@ const recipeContainer = document.querySelector(".recipesContainer");
 const inputField = document.querySelector(".searchInput");
 const recipeSect = document.querySelector(".recipeContentSection");
 
+let recipeResult;
+
 injectCategories();
 injectRecipes(recipes);
 inputField.addEventListener('keyup', () => searchRecipe());
@@ -64,7 +66,7 @@ function injectRecipes(recipes) {
     allRecipeLinks.forEach(function (recipeLink) {
         recipeLink.addEventListener('click', function() {
             let identity = event.currentTarget.id;
-            let recipeResult = recipes.filter(function (recipe) {
+            recipeResult = recipes.filter(function (recipe) {
                 if (recipe.id === identity) {
                     return `<div class="pageTitle">${recipe.title}</div>
                     <section class="recipeSection>
@@ -80,10 +82,15 @@ function injectRecipes(recipes) {
                     </section>"`;
                 }
             })
-            window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
-            recipeSect.innerHTML = recipeResult;
+
+            injectRecipeContent(recipeResult);
         });
     })
+}
+
+function injectRecipeContent (recipe) {
+    window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
+    recipeSect.innerHTML = recipe;
 }
 
 function searchRecipe() {
