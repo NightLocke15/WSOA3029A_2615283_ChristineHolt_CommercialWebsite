@@ -3,7 +3,7 @@ const homePageSections = [
         id: "recipes",
         name: "Just Recipes",
         description: "No other stuff. Find recipes by fellow cooks and bakers in our extensive archives. Use, Like and Share the recipe, easily find what you need without having to dig through anything unnecessary!",
-        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipes/index.html",
+        href: "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/index.html",
         button: "Find Recipes"
     },
     {

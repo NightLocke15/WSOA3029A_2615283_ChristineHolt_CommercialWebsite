@@ -2,7 +2,7 @@ const root = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/"
 
 const menu = [
     {name: "Home", href: `${root}index.html`},
-    {name: "Recipes", href: `${root}recipes/index.html`},
+    {name: "Recipes", href: `${root}recipesFile/index.html`},
     {name: "Articles", href: `${root}articles/index.html`},
     {name: "About", href: `${root}about/index.html`},
     {name: "Post", href: `${root}recipesFile/postARecipe.html`},
