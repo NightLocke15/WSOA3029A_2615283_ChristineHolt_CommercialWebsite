@@ -3,6 +3,7 @@ import { recipes } from "./recipesData.js"
 const filterSection = document.querySelector(".categories");
 const recipeContainer = document.querySelector(".recipesContainer");
 const inputField = document.querySelector(".searchInput");
+const recipeSect = document.querySelector(".recipeContentSection");
 
 injectCategories();
 injectRecipes(recipes);
@@ -44,19 +45,45 @@ function injectCategories() {
 
 function injectRecipes(recipes) {
     let recipeItems = recipes.map(function (recipe) {
-        return `<article class="recipeLink">
+        return `<article class="recipeLink" id="${recipe.id}">
           <img
             src="${recipe.image}"
             class="recipeImage"
           />
           
-            <div class="recipeName">${recipe.name}</div>
+            <div class="recipeName">${recipe.title}</div>
             <div class="recipeTime">${recipe.time}</div>
           
         </article>`
     }).join("");
 
     recipeContainer.innerHTML = recipeItems;
+
+    let allRecipeLinks = document.querySelectorAll(".recipeLink");
+
+    allRecipeLinks.forEach(function (recipeLink) {
+        recipeLink.addEventListener('click', function() {
+            let identity = event.currentTarget.id;
+            let recipeResult = recipes.filter(function (recipe) {
+                if (recipe.id === identity) {
+                    return `<div class="pageTitle">${recipe.title}</div>
+                    <section class="recipeSection>
+                        <div class="verticalLine"></div>
+                        <section class="recipeContent">
+                        <img href="${recipe.image}" alt="" title="${recipe.imageRef}"/>
+                        <p>Ingredients<p>
+                        ${recipe.recipeElements.ingredients}
+                        <p>Instructions<p>
+                        ${recipe.recipeElements.instructions}
+                        ${recipe.recipeElements.reference}
+                        </section>
+                    </section>"`;
+                }
+            })
+            window.location.href = "/recipe.html";
+            recipeSect.innerHTML = recipeResult;
+        });
+    })
 }
 
 function searchRecipe() {

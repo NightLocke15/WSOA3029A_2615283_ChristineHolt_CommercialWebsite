@@ -156,7 +156,7 @@ nav {
     flex: 1;
     background-color: #ffffff;
     outline: solid #E77373;
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 4em;
@@ -173,7 +173,7 @@ nav {
 }
 
 .sectionTitle {
-    font-size: 50px;
+    font-size: 40px;
     color: #701F41;
     font-weight: bold;
 }
@@ -187,9 +187,10 @@ nav {
 #description {
     flex: 70.8%;
     font-family: "Roboto", sans-serif;
-    font-size: 30px;
+    font-size: 22px;
     width: 500px;  
     margin-right: 50px;
+    line-height: 1.5;
 }
 
 .button {
