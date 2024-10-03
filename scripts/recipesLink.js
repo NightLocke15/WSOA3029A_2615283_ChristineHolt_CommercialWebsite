@@ -83,12 +83,12 @@ function injectRecipes(recipes) {
                     </section>"`;
                 }
             })
+            window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
         });
     })
 }
 
 function injectRecipeContent (recipe) {
-    window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
     recipeSect.innerHTML = recipe;
 }
 
