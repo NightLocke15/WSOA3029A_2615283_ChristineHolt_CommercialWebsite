@@ -10,6 +10,7 @@ let recipeResult;
 injectCategories();
 injectRecipes(recipes);
 inputField.addEventListener('keyup', () => searchRecipe());
+injectRecipeContent(recipeResult);
 
 function injectCategories() {
     let categories = recipes.reduce (function(values, item){
@@ -82,8 +83,6 @@ function injectRecipes(recipes) {
                     </section>"`;
                 }
             })
-
-            injectRecipeContent(recipeResult);
         });
     })
 }
