@@ -72,3 +72,9 @@ export const recipes = [
         time: "+/- 30 mins"
     }
 ]
+
+export const recipesContent = [
+    {
+        
+    }
+]
