@@ -1,5 +1,6 @@
 import { recipes } from "./recipesData.js"
 
+
 const filterSection = document.querySelector(".categories");
 const recipeContainer = document.querySelector(".recipesContainer");
 const inputField = document.querySelector(".searchInput");
@@ -7,7 +8,7 @@ const inputField = document.querySelector(".searchInput");
 injectCategories();
 injectRecipes(recipes);
 inputField.addEventListener('keyup', () => searchRecipe());
-export let recipeResult;
+
 
 function injectCategories() {
     let categories = recipes.reduce (function(values, item){
@@ -65,13 +66,16 @@ function injectRecipes(recipes) {
         recipeLink.addEventListener('click', function() {
             let identity = event.currentTarget.id;
             console.log(identity);
-            recipeResult = recipes.filter(function (recipe) {
+            let recipeResult = recipes.filter(function (recipe) {
               if (recipe.id == identity) {
                 return recipe;
               }
               
             });
-            
+            localStorage.clear();
+            let myRecipe = recipeResult;
+            let myRecipeString = JSON.stringify(myRecipe);
+            localStorage.setItem('currentRecipe', myRecipeString);
             window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
         });
     })

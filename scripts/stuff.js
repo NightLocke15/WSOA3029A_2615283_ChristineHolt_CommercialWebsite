@@ -1,9 +1,7 @@
-import { recipeResult } from "/recipesLink.js";
-
-const recipeContent = document.querySelector(".recipeContentSection")
-
 recipe();
 
 function recipe() {
-    recipeContent.innerHTML = recipeResult;
+    let myCurrentRecipeString = localStorage.getItem('currentRecipe');
+    let myCurrentRecipe = JSON.parse(myCurrentRecipeString);
+    console.log(myCurrentRecipe);
 }
