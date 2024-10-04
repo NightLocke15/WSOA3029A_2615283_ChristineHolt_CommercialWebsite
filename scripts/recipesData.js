@@ -5,7 +5,7 @@ export const recipes  = [
         title: "Potato Dish",
         category: "Dinner",
         image: "../images/potatoBakeImage.jpg",
-        imageRef: "Credit: Asfand Munib - Pexels.com",
+        imageRef: "Potato bake in a square white bowl. Credit: Asfand Munib - Pexels.com",
         time: "+/- 40 mins",
         recipeElements: 
             {
@@ -68,7 +68,7 @@ export const recipes  = [
         title: "Bean Soup",
         category: "Dinner",
         image: "../images/beanSoup.jpg",
-        imageRef: "Credit: Farhad Ibrahimzade - Pexels.com",
+        imageRef: "Soup in a white bowl with a spoon balanced on top. Credit: Farhad Ibrahimzade - Pexels.com",
         time: "+/- 45 mins",
         recipeElements: 
             {
@@ -112,7 +112,7 @@ export const recipes  = [
         title: "Wheat Salad",
         category: "Dinner",
         image: "../images/wheatSalad.jpg",
-        imageRef: "Credit: Evi - Pexels.com",
+        imageRef: "A close up image of wheat in a field. Credit: Evi - Pexels.com",
         time: "+/- 30 mins",
         recipeElements: 
             {
@@ -194,7 +194,7 @@ export const recipes  = [
         title: "Pumpkin Fritters",
         category: "Dinner",
         image: "../images/pumpkinFritters.jpg",
-        imageRef: "Credit: Su La Pyae - Pexels.com",
+        imageRef: "Fritters on a white plate. Credit: Su La Pyae - Pexels.com",
         time: "+/- 45 mins",
         recipeElements: 
             {
@@ -265,7 +265,7 @@ export const recipes  = [
         title: "Ginger Beer",
         category: "Drinks",
         image: "../images/gingerBeer.jpg",
-        imageRef: "Credit: Studio Naae - Pexels.com",
+        imageRef: "A beige coloured liquid in a cocktail glass. Credit: Studio Naae - Pexels.com",
         time: "+/- 27 hours",
         recipeElements: 
             {
@@ -313,7 +313,7 @@ export const recipes  = [
         title: "Green Punch",
         category: "Drinks",
         image: "../images/greenPunch.jpg",
-        imageRef: "Credit: Ilyas Chabli - Pexels.com",
+        imageRef: "A mason jar with a handle filled with a green liquid and lemon slices. Credit: Ilyas Chabli - Pexels.com",
         time: "+/- 1 hour",
         recipeElements: 
             {
@@ -365,7 +365,7 @@ export const recipes  = [
         title: "Rooibos Bread",
         category: "Breakfast",
         image: "../images/rooibosBread.jpg",
-        imageRef: "Credit: Amirho3in tavkoli - Pexels.com",
+        imageRef: "Slices of bread with dollops of cheese and garnishes over top. Credit: Amirho3in tavkoli - Pexels.com",
         time: "+/- 6 hours",
         recipeElements: 
             {
@@ -433,7 +433,7 @@ export const recipes  = [
         title: "Cheese Butter Buns",
         category: "Breakfast",
         image: "../images/buns.jpg",
-        imageRef: "Credit: Christina Voinova - Pexels.com",
+        imageRef: "Balls of dough in two lines with sprinkled flour in between. Credit: Christina Voinova - Pexels.com",
         time: "+/- 45 mins",
         recipeElements: 
             {
@@ -480,7 +480,7 @@ export const recipes  = [
         title: "Coffee Tart",
         category: "Desert",
         image: "../images/coffeeCake.jpg",
-        imageRef: "Credit: Cats Coming - Pexels.com",
+        imageRef: "Triangular piece of cake covered in cinnamon. Credit: Cats Coming - Pexels.com",
         time: "+/- 30 mins",
         recipeElements: 
             {
@@ -595,7 +595,7 @@ export const recipes  = [
         title: "Milk Tart",
         category: "Desert",
         image: "../images/milkTart.jpg",
-        imageRef: "Credit: Camila Benitez - Pexels.com",
+        imageRef: "A tart with white peaks, a slice cut out and a pink flower on top. Credit: Camila Benitez - Pexels.com",
         time: "+/- 45 mins",
         recipeElements: 
             {

@@ -49,7 +49,7 @@ function injectRecipes(recipes) {
         return `<article class="recipeLink" id="${recipe.id}">
           <img
             src="${recipe.image}"
-            class="recipeImage" id="${recipe.id}"
+            class="recipeImage" id="${recipe.id}" alt="${recipe.imageRef}" title="${recipe.imageRef}"
           />
           
             <div class="recipeName">${recipe.title}</div>

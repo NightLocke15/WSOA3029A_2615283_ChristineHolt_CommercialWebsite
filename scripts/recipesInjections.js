@@ -1,4 +1,5 @@
 const recipeContent = document.querySelector(".recipeContentSection");
+const recipeTitle = document.querySelector("title");
 
 recipe();
 
@@ -20,4 +21,6 @@ function recipe() {
             ${myCurrentRecipe[0].recipeElements.reference}
         </section>
     </section>`;
+
+    recipeTitle.innerHTML = `${myCurrentRecipe[0].title}`;
 }
