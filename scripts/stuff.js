@@ -1,6 +1,6 @@
-recipe();
-
 const recipeContent = document.querySelector(".recipeContentSection");
+
+recipe();
 
 function recipe() {
     let myCurrentRecipeString = localStorage.getItem('currentRecipe');
