@@ -240,8 +240,8 @@ footer {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     margin-bottom: 20px;
-    margin-right: 40em;
-    margin-left: 40em;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .footerLink:hover {
@@ -495,4 +495,497 @@ figure {
     font-size: 25px;
     color: #701F41;
     font-weight: bold;
+}
+
+#offScreenMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    height: 100%;
+    width: 100%;
+    max-width: fit-content;
+    padding-left: 2em;
+    padding-right: 2em;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    transition: 0.3s ease;
+}
+
+#offScreenMenu.active {
+    right: 0;
+}
+
+.offScreenNav {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: #701F41;
+}
+
+@media screen and (max-width: 430px) {
+    .mainPageImage {
+        width: 100%;
+        height: 800px;
+        object-fit: cover;
+    }
+
+    .mainPageTitle {
+        position: absolute; 
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-family: "Life Savers", serif;
+        font-weight: 700;
+        font-size: 58px;
+    }
+    
+    .slogan {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 1em;        
+    }
+
+    #navLinks {
+        display: none;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        position: relative;
+        margin-right: 2em;
+        margin-top: 5px;
+    }
+    
+    .hamburger span {
+        height: 2px;
+        width: 100%;
+        background-color: #701F41;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: 0.3s ease;
+    }
+    
+    .hamburger span:nth-child(1) {
+        top: 25%
+    }
+    
+    .hamburger span:nth-child(3) {
+        top: 75%
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+
+    .navArrow {
+        display: none;
+    }
+
+    #section {
+        padding: 3em;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+        color: #701F41;
+        font-weight: bold;
+    }
+    
+    .descAndButt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #description {
+        flex: 1;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        width: 260px;  
+        margin-right: 50px;
+        line-height: 1.5;
+    }
+    
+    .button {
+        flex: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: auto;
+        text-align: center;
+    }
+    
+    .buttonLink {
+        font-family: "Roboto", sans-serif;
+        background-color: #701F41;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 40px;
+        transition: 0.5s;
+    }
+    
+    .buttonLink:hover {
+        padding: 15px 28px;
+    }
+    
+    .separationLine {
+        display: none;
+    }
+
+    .verticalLine {
+        margin-left: 4em;
+    }
+
+    .postInstructions, .recipeContent {
+        padding: 0px;
+        margin-right: 7em;
+    }
+
+    .recipesPageSection {
+        margin-top: 6em;
+        width: var(90vw);
+        display: grid;
+        grid-gap: 1rem;
+        margin: 4rem auto;
+        max-width: var(1120px);
+    }
+    
+    .filters h5 {
+        font-weight: 500;
+        margin: 1.5rem 0 0.5rem;
+        font-size: 0.85rem;
+        font-family:"Roboto", sans-serif;
+        margin-left: 1em;
+    }
+    
+    .mainSection {
+        display: flex;
+    }
+    
+    .filters {
+        flex: 28%;
+    }
+    
+    .searchInput {
+        padding: 0.5rem;
+        background: #ffffff;
+        border-radius: 1rem;
+        border-color: #701F41;
+        letter-spacing: 1px;
+        margin-left: 1em;
+        width: 5em;
+    }
+    
+    .horizontalDivider {
+        background-color: #E77373;
+        height: 1px;
+        width: 5em;
+        margin-left: 1em;
+        margin-right: 10px;
+    }
+    
+    .categoryButt {
+        display: block;
+        margin: 0.25em 0;
+        padding: 0.25rem;
+        text-transform: capitalize;
+        background: transparent;
+        border-color: transparent;
+        letter-spacing: 1px;
+        color: #000000;
+        cursor: pointer;
+        font-size: 0.85rem;
+        margin-left: 2em;
+        font-family:"Roboto", sans-serif;
+    }
+    
+    .verticalDivider {
+    display: none;
+    }
+    
+    .recipesContainer {
+        display: grid; 
+        grid-template-columns: auto; 
+        flex: 70%;
+        margin-right: 0em;
+        margin-left: 1em;
+    }
+    
+    .recipeLink {
+        width: 11em;
+        background-color: #ffffff;
+        outline: solid #E77373;
+        border-radius: 20px;
+        margin-bottom: 2em;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        padding: 1em;
+        transition: 0.1s;
+        cursor: pointer;
+    }
+
+    .pageTitle {
+        font-size: 40px;
+        color: #701F41;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .essayImage {
+        width: 120%;
+    }
+}
+
+@media screen and (max-width: 1040px) and (min-width: 431px) {
+
+    .mainPageImage {
+        width: 100%;
+        height: 930px;
+        object-fit: cover;
+    }
+
+    .mainPageTitle {
+        position: absolute; 
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-family: "Life Savers", serif;
+        font-weight: 700;
+        font-size: 68px;
+    }
+    
+    .slogan {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        padding: 10px;
+        margin-top: 1em;        
+    }
+
+    #navLinks {
+        display: none;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        position: relative;
+        margin-right: 2em;
+        margin-top: 5px;
+    }
+    
+    .hamburger span {
+        height: 2px;
+        width: 100%;
+        background-color: #701F41;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: 0.3s ease;
+    }
+    
+    .hamburger span:nth-child(1) {
+        top: 25%
+    }
+    
+    .hamburger span:nth-child(3) {
+        top: 75%
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+
+    .navArrow {
+        display: none;
+    }
+
+    #section {
+        padding: 3em;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+        color: #701F41;
+        font-weight: bold;
+    }
+    
+    .descAndButt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #description {
+        flex: 1;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        width: 500px;  
+        margin-right: 50px;
+        line-height: 1.5;
+    }
+    
+    .button {
+        flex: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        margin-bottom: auto;
+        text-align: center;
+    }
+    
+    .buttonLink {
+        font-family: "Roboto", sans-serif;
+        background-color: #701F41;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 15px;
+        border-radius: 40px;
+        transition: 0.5s;
+    }
+    
+    .buttonLink:hover {
+        padding: 15px 28px;
+    }
+    
+    .separationLine {
+        display: none;
+    }
+
+    .verticalLine {
+        flex: 30%;
+        margin-left: 5em;
+        
+    }
+
+    .postInstructions, .recipeContent {
+        flex: 70%;
+        padding: 0px;
+        margin-right: 15em;
+        width: 70%;
+    }
+
+    .recipesPageSection {
+        margin-top: 6em;
+        width: var(90vw);
+        display: grid;
+        grid-gap: 1rem;
+        margin: 4rem auto;
+        max-width: var(1120px);
+    }
+    
+    .filters h5 {
+        font-weight: 500;
+        margin: 1.5rem 0 0.5rem;
+        font-size: 0.85rem;
+        font-family:"Roboto", sans-serif;
+        margin-left: 2em;
+    }
+    
+    .mainSection {
+        display: flex;
+    }
+    
+    .filters {
+        flex: 28%;
+    }
+    
+    .searchInput {
+        padding: 0.5rem;
+        background: #ffffff;
+        border-radius: 1rem;
+        border-color: #701F41;
+        letter-spacing: 1px;
+        margin-left: 1em;
+        width: 8em;
+    }
+    
+    .horizontalDivider {
+        background-color: #E77373;
+        height: 1px;
+        width: 5em;
+        margin-left: 1em;
+        margin-right: 10px;
+    }
+    
+    .categoryButt {
+        display: block;
+        margin: 0.25em 0;
+        padding: 0.25rem;
+        text-transform: capitalize;
+        background: transparent;
+        border-color: transparent;
+        letter-spacing: 1px;
+        color: #000000;
+        cursor: pointer;
+        font-size: 0.85rem;
+        margin-left: 3em;
+        font-family:"Roboto", sans-serif;
+    }
+    
+    .recipesContainer {
+        display: grid; 
+        grid-template-columns: auto auto; 
+        flex: 70%;
+        margin-right: 0em;
+        margin-left: 1em;
+    }
+    
+    .recipeLink {
+        width: 11em;
+        background-color: #ffffff;
+        outline: solid #E77373;
+        border-radius: 20px;
+        margin-bottom: 2em;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        padding: 1em;
+        transition: 0.1s;
+        cursor: pointer;
+    }
+
+    .pageTitle {
+        font-size: 40px;
+        color: #701F41;
+        font-weight: bold;
+        text-align: center;
+    }
 }

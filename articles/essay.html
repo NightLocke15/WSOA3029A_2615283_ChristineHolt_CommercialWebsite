@@ -11,14 +11,26 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <script type="module"> import { navigationBar } from "../scripts/navigation.js" 
         navigationBar("") </script>
+    <script type="module"> import { offScreenNavigation } from "../scripts/offScreenMenu.js" 
+        offScreenNavigation("") </script>
 </head>
 <body>
-    <header>
+    <header><!--Header containing the logo and navigation elements-->
         <a class="title" href="/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/index.html">STEP 1</a>
         <nav>
-            <section class="navigation-buttons"></section>
+            <section class="navigation-buttons" id="navLinks"></section>
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
+    <!--Section that contains the essay-->
     <section class="essayPageSection">
         <div class="pageTitle">Essay: Critical Analysis of the Effectiveness of Data Visualisations:</div>
         <section class="essayContent">
@@ -35,8 +47,8 @@
                     purpose. Maps are an extremely versatile form of data visualisation, as they can represent
                     various types of geographical data in different ways <cite><a href="https://careerfoundry.com/en/blog/data-analytics/data-visualization-types/">(Hillier, 2021)</a></cite>.</p>
                 <figure>
-                    <img src="/images/VisualisationOfDetroit.png" alt="A grey visualisation of a map of Detroit with a piece of text on the right. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="A grey map of Detroit. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
-                    <img src="/images/VisualisationOfBirwoodWall.png" alt="A grey visualisation of the Eight-Mile Wyoming area in Detroit with a red line showing the Birwood wall. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="A grey visualisation of the Eight-Mile Wyoming area in Detroit with a red line showing the Birwood wall. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
+                    <img class="essayImage" src="/images/VisualisationOfDetroit.png" alt="A grey visualisation of a map of Detroit with a piece of text on the right. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="A grey map of Detroit. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
+                    <img class="essayImage" src="/images/VisualisationOfBirwoodWall.png" alt="A grey visualisation of the Eight-Mile Wyoming area in Detroit with a red line showing the Birwood wall. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="A grey visualisation of the Eight-Mile Wyoming area in Detroit with a red line showing the Birwood wall. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
                     <figcaption>Figure 1: The first map showcasing where the Birwood Wall is located and what its purpose was.</figcaption>
                 </figure>
                 
@@ -54,8 +66,8 @@
                     displayed. Together, this visualisation informs the reader of the situation without
                     overwhelming them with information.</p>
                 <figure>
-                    <img src="/images/RedLineVisualisationOfDetroit.png" alt="A map with red sections showcasing the areas of detroit that were red lined by the government. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Red-lined areas in Detroit. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
-                    <img src="/images/RedLineVisualisationOfNeighbourhood.png" alt="A zoomed in image of the Eight-Mile Wyoming area that shows the red-lined and not red-lined areas. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Red-lined and not red-lined areas of Eight-Mile Wyoming. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
+                    <img class="essayImage" src="/images/RedLineVisualisationOfDetroit.png" alt="A map with red sections showcasing the areas of detroit that were red lined by the government. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Red-lined areas in Detroit. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
+                    <img class="essayImage" src="/images/RedLineVisualisationOfNeighbourhood.png" alt="A zoomed in image of the Eight-Mile Wyoming area that shows the red-lined and not red-lined areas. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Red-lined and not red-lined areas of Eight-Mile Wyoming. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
                     <figcaption>Figure 2: Second map that shows the red-lined areas of Detroit.</figcaption>
                 </figure>
                 <p>The second map starts by showing the Eight Mile-Wyoming neighbourhood, then zooms out
@@ -75,12 +87,12 @@
                     colour to highlight these areas, plays on these emotions when combined with the content of
                     the article.</p>
                     <figure>
-                        <img src="/images/DetroitVisualisationPart1.png" alt="Visualisation showing the spread of black, white and other demographics in Detroit in the 1930's. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Spread of black, white and other demographics in Detroit in the 1930's. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
-                        <img src="/images/DetroitVisualisationPart2.png" alt="Visualisation showing the spread of black, white and other demographics in Detroit in 2019. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Spread of black, white and other demographics in Detroit in 2019. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
+                        <img class="essayImage" src="/images/DetroitVisualisationPart1.png" alt="Visualisation showing the spread of black, white and other demographics in Detroit in the 1930's. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Spread of black, white and other demographics in Detroit in the 1930's. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
+                        <img class="essayImage" src="/images/DetroitVisualisationPart2.png" alt="Visualisation showing the spread of black, white and other demographics in Detroit in 2019. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="Spread of black, white and other demographics in Detroit in 2019. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
                         <figcaption>Figure 3: The third map shows the demographics within the different areas of Detroit.</figcaption>
                     </figure>
                     <figure>
-                        <img src="/images/HomevaluesVisualisation.png" alt="A grey visualisation of the home values in areas of Detroit in 2021. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="A grey visualisation of the home values in areas of Detroit in 2021. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
+                        <img class="essayImage" src="/images/HomevaluesVisualisation.png" alt="A grey visualisation of the home values in areas of Detroit in 2021. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'." title="A grey visualisation of the home values in areas of Detroit in 2021. Credit: Einhorn and Lewis (2021) in NBC Article 'Built to keep Black from white'.">
                         <figcaption>Figure 4: This is the map found at the end of the third one that showcases the average home value in the different areas of
                             Detroit.</figcaption>
                     </figure>
@@ -198,9 +210,12 @@
         </section>
 
     </section>
-    <footer></footer>
+    <footer>
+        <!--Footer containing important things on website-->
+    </footer>
     
     <script src="../scripts/app.js"></script>
     <script src="../scripts/footer.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 </html>

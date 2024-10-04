@@ -1,13 +1,17 @@
-const recipeContent = document.querySelector(".recipeContentSection");
-const recipeTitle = document.querySelector("title");
+//Fetch html elements
+const recipeContent = document.querySelector(".recipeContentSection"); //Fetch element where recipe will be displayed
+const recipeTitle = document.querySelector("title"); //Access page title in order to make it match the current recipe.
 
 recipe();
 
+//Inject recipe into html page
 function recipe() {
+    //Fetch recipe information from local storage
     let myCurrentRecipeString = localStorage.getItem('currentRecipe');
     let myCurrentRecipe = JSON.parse(myCurrentRecipeString);
     console.log(myCurrentRecipe[0].recipeElements.ingredients);
 
+    //Inject the recpe onto the recipe html page, this makes it dynamic so every recipe does not have to be on its own page.
     recipeContent.innerHTML = `<div class="recipeTitle">${myCurrentRecipe[0].title}</div>
     <section class="recipeCont">
         <div class="verticalLine"></div>
@@ -22,5 +26,6 @@ function recipe() {
         </section>
     </section>`;
 
+    //Change the page title
     recipeTitle.innerHTML = `${myCurrentRecipe[0].title}`;
 }

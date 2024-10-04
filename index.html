@@ -11,33 +11,45 @@
     <link rel="stylesheet" href="styles/styles.css">
     <script type="module"> import { navigationBar } from "./scripts/navigation.js" 
         navigationBar("Home") </script>
+    <script type="module"> import { offScreenNavigation } from "./scripts/offScreenMenu.js" 
+        offScreenNavigation("Home") </script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
 </head>
 <body>
-    <header>
+    <header> <!--Header containing the logo and navigation elements-->
         <a class="title" href="/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/index.html">STEP 1</a>
         <nav>
-            <section class="navigation-buttons"></section>
+            <section class="navigation-buttons" id="navLinks"></section>
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
-    <section class="introductionSection">
+    <section class="introductionSection"> <!--Image on the main page of a baked good with logo and slogan printed on top-->
         <img class="mainPageImage" src="images/mainPageImage.jpg" alt="Photo of pasteries with blueberries on top, soft focus. Credit: Maria Orlova - Pexels.com" title="Pasteries with blueberries on top, soft focus. Credit: Maria Orlova - Pexels.com">
         <div class="mainPageTitle">STEP 1</div>
         <div class="slogan">Just recipes. No other fluff.</div>
-        <div class="navArrow">
+        <div class="navArrow"> <!--Arrow leading user downwards-->
             <i class="fa fa-angle-down"></i>
         </div>
     </section>
     <section class="websiteMainContent">
-        
+        <!--Main things to offer on this website-->
     </section>
     
     
     <footer>
-
+        <!--Footer containing important things on website-->
     </footer>
     <script src="scripts/homePage.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/footer.js"></script>
+    <script src="scripts/hamburger.js"></script>
 </body>
 </html>

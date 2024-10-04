@@ -1,31 +1,38 @@
-import { recipes } from "./recipesData.js"
+import { recipes } from "./recipesData.js" //Data containing all the details for all the recipes currently on the website
 
+//Fetching html elements
 
-const filterSection = document.querySelector(".categories");
-const recipeContainer = document.querySelector(".recipesContainer");
-const inputField = document.querySelector(".searchInput");
+const filterSection = document.querySelector(".categories"); //Fetching the area where the filter buttons will be injected
+const recipeContainer = document.querySelector(".recipesContainer"); //Fetching the area where all the links to the recipes will be found
+const inputField = document.querySelector(".searchInput"); // Fetching the inputfield that enables the user to search for specific recipes
 
 injectCategories();
 injectRecipes(recipes);
-inputField.addEventListener('keyup', () => searchRecipe());
+inputField.addEventListener('keyup', () => searchRecipe()); //Consistently tracking what the user types into the input field
 
+//Categories: Each category of food available on the website
 
 function injectCategories() {
-    let categories = recipes.reduce (function(values, item){
+    //Find all the different categories available and place in an array
+    let categories = recipes.reduce (function(values, item){ 
         if (!values.includes(item.category)) {
             values.push(item.category);
         }
         return values;
     }, ["all"]);
 
+    //mapping the categories found in the data into a variable
     let buttons = categories.map(function (category) {
         return `<button class="categoryButt" id = "${category}">${category}</button>`
     }).join("");
 
+    //Use variable to place mapped buttons in the filter section
     filterSection.innerHTML = buttons;
 
+    //Finding the whole list of filter buttons
     const filterButtons = document.querySelectorAll(".categoryButt");
 
+    //Add event listeners to each of the category buttons  in order to filter the recipes
     filterButtons.forEach(function(button) {
         button.addEventListener('click', function(event) {
             let category = event.currentTarget.id;
@@ -44,7 +51,10 @@ function injectCategories() {
     });
 }
 
+//Recipes: Each available recipe linked so it can be accessed
+
 function injectRecipes(recipes) {
+    //Recipes mapped into variable
     let recipeItems = recipes.map(function (recipe) {
         return `<article class="recipeLink" id="${recipe.id}">
           <img
@@ -58,10 +68,13 @@ function injectRecipes(recipes) {
         </article>`
     }).join("");
 
+    //Use variable to inject recipes into the recipe container
     recipeContainer.innerHTML = recipeItems;
 
+    //Get all the recipe links on the recipe page
     let allRecipeLinks = document.querySelectorAll(".recipeLink");
 
+    //Add event listeners to each link in order to be able to access that recipe
     allRecipeLinks.forEach(function (recipeLink) {
         recipeLink.addEventListener('click', function() {
             let identity = event.currentTarget.id;
@@ -72,6 +85,8 @@ function injectRecipes(recipes) {
               }
               
             });
+            //place recipe information that is relevant to clicked link in the local storage in order to be able to access 
+            //it on another html page and in another javascript file
             localStorage.clear();
             let myRecipe = recipeResult;
             let myRecipeString = JSON.stringify(myRecipe);
@@ -81,12 +96,16 @@ function injectRecipes(recipes) {
     })
 }
 
+
+//Functionality for input field
 function searchRecipe() {
+    //make everything typed into input lowercase so it can be compared to names in the data.
     let value = inputField.value.toLowerCase();
 
     let searchRecipes = recipes.filter(function (recipe) {
         return recipe.name.toLowerCase().includes(value);
     });
 
+    //filter recipes
     injectRecipes(searchRecipes);
 }

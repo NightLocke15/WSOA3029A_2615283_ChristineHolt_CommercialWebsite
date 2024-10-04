@@ -11,18 +11,31 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <script type="module"> import { navigationBar } from "../scripts/navigation.js" 
         navigationBar("Recipes") </script>
+    <script type="module"> import { offScreenNavigation } from "../scripts/offScreenMenu.js" 
+        offScreenNavigation("Recipes") </script>
 </head>
 <body>
-    <header>
+    <header><!--Header containing the logo and navigation elements-->
         <a class="title" href="/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/index.html">STEP 1</a>
         <nav>
-            <section class="navigation-buttons"></section>
+            <section class="navigation-buttons" id="navLinks"></section>
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
     
+    <!--Part of the page that will contain the filters and the recipes in the website-->
     <section class="recipesPageSection">
         <div class="pageTitle">Recipes</div>
         <div class="mainSection">
+            <!--Category filters-->
             <section class="filters">
                 <form class="input-form">
                     <input type="text" class="searchInput" placeholder="search..." />
@@ -31,14 +44,13 @@
                 <h5>Meal Type</h5>
                 <div class="horizontalDivider"></div>
                 <article class="categories">
-                <!--<button class="categoryButt" data-id = "">all</button>
-              <button class="categoryButt" data-id = "">ikea</button>
-              <button class="categoryButt" data-id = "">marcos</button>-->
+
                 </article>
             </section>
         
         
             <div class="verticalDivider"></div>
+            <!--Recipes available-->
             <section class="recipesContainer">
 
             </section>
@@ -47,8 +59,11 @@
 
         </section>
     </section>
-    <footer></footer>
+    <footer>
+        <!--Footer containing important things on website-->
+    </footer>
     <script type="module" src="../scripts/recipesLink.js"></script>
     <script src="../scripts/footer.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 </html>

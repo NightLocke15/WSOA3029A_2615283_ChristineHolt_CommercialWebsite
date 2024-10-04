@@ -11,22 +11,34 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <script type="module"> import { navigationBar } from "../scripts/navigation.js" 
         navigationBar("") </script>
+    <script type="module"> import { offScreenNavigation } from "../scripts/offScreenMenu.js" 
+        offScreenNavigation("") </script>
 </head>
 <body>
-    <header>
+    <header><!--Header containing the logo and navigation elements-->
         <a class="title" href="/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/index.html">STEP 1</a>
         <nav>
-            <section class="navigation-buttons"></section>
+            <section class="navigation-buttons" id="navLinks"></section>
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
-    <section class="recipeContentSection">
+    <section class="recipeContentSection"> <!--Section that will contain the data for the recipes-->
 
     </section>
     
     <footer>
-
+        <!--Footer containing important things on website-->
     </footer>
     <script src="../scripts/footer.js"></script>
     <script src="../scripts/recipesInjections.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 </html>

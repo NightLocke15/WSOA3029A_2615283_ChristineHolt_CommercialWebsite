@@ -1,3 +1,4 @@
+//Homepage sections below the image data
 const homePageSections = [
     {
         id: "recipes",
@@ -22,11 +23,14 @@ const homePageSections = [
     }
 ]
 
+//Access the container where the sections will be added
 const mainContent = document.querySelector(".websiteMainContent")
 
 injectSections();
 
+//Inject the information for these sections
 function injectSections () {
+    //map the sections into a variable
     let sections = homePageSections.map(function (section) {
         const { id, name, description, href, button } = section;
         return `<article id="section">
@@ -41,5 +45,6 @@ function injectSections () {
         </article>`
     }).join("");
 
+    //Use the variable to inject the sections into the html page.
     mainContent.innerHTML = sections;
 }

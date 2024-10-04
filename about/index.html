@@ -11,18 +11,30 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <script type="module"> import { navigationBar } from "../scripts/navigation.js" 
         navigationBar("About") </script>
+    <script type="module"> import { offScreenNavigation } from "../scripts/offScreenMenu.js" 
+        offScreenNavigation("About") </script>
 </head>
 <body>
-    <header>
+    <header><!--Header containing the logo and navigation elements-->
         <a class="title" href="/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/index.html">STEP 1</a>
         <nav>
-            <section class="navigation-buttons"></section>
+            <section class="navigation-buttons" id="navLinks"></section>
+            <div id="navLinks">
+            </div>
+            <div id="offScreenMenu"> 
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
+    <!--Section that will contain both the About Me section and the About the website section-->
     <section class="pageSection">
         <div class="pageTitle">About</div>
         <div class="aboutSection">
-            <div class="aboutTitle">About Me</div>
+            <div class="aboutTitle">About Me</div><!--About me section-->
             <div class="aboutCont">
                 <p>I love cooking. I am not all that good at it though, and thus, I need to follow recipes when I do decide to do it.
                 I am also very easily distracted, so I need recipes to be concise and without fluff, which is not something I am often able to find in the
@@ -36,7 +48,7 @@
             </div>
         </div>
         <div class="aboutSection">
-            <div class="aboutTitle">About Website</div>
+            <div class="aboutTitle">About Website</div><!--About website section-->
             <div class="aboutCont">
                 <p>This website is designed to be simple and without fluff. The colours were chosen to perpetuate the more relaxed and fun feeling of the website. 
                     It is used as a platform to provide access to recipes without irrelevant information, as well as articles that provide further information on 
@@ -49,9 +61,10 @@
         
     </section>
     <footer>
-
+        <!--Footer containing important things on website-->
     </footer>
     <script src="../scripts/app.js"></script>
     <script src="../scripts/footer.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 </html>
