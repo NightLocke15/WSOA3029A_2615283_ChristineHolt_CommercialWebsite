@@ -262,6 +262,14 @@ footer {
     text-align: center;
 }
 
+.recipeTitle {
+    font-size: 40px;
+    color: #701F41;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10em
+}
+
 .aboutSection {
     display: flex;
     flex-direction: column;

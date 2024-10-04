@@ -7,7 +7,7 @@ function recipe() {
     let myCurrentRecipe = JSON.parse(myCurrentRecipeString);
     console.log(myCurrentRecipe[0].recipeElements.ingredients);
 
-    recipeContent.innerHTML = `<div class="pageTitle">${myCurrentRecipe[0].title}</div>
+    recipeContent.innerHTML = `<div class="recipeTitle">${myCurrentRecipe[0].title}</div>
     <section class="recipeCont">
         <div class="verticalLine"></div>
         <section class="recipeContent">
