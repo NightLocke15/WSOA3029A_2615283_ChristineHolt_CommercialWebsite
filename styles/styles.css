@@ -415,11 +415,11 @@ height: auto;
     outline: 1px solid #701F41;
 }
 
-.postPageSection, .essayPageSection, .articlesPageSection {
+.postPageSection, .essayPageSection, .articlesPageSection, .recipeContentSection {
     margin-top: 6em;
 }
 
-.instructionalSection {
+.instructionalSection, .recipeCont {
     display: flex;
 }
 
@@ -431,7 +431,7 @@ height: auto;
     margin-left: 10em;
 }
 
-.postInstructions {
+.postInstructions, .recipeContent {
     flex: 60%;
     margin-left: 1.5em;
     margin-right: 7em;
