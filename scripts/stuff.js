@@ -3,5 +3,5 @@ recipe();
 function recipe() {
     let myCurrentRecipeString = localStorage.getItem('currentRecipe');
     let myCurrentRecipe = JSON.parse(myCurrentRecipeString);
-    console.log(myCurrentRecipe);
+    console.log(myCurrentRecipe[0].ingredients);
 }
