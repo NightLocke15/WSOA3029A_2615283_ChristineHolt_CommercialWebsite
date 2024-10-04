@@ -1,6 +1,6 @@
 export const recipes  = [
     {
-        id: 1,
+        id: "potatodish",
         name: "potato dish",
         title: "Potato Dish",
         category: "Dinner",
@@ -63,7 +63,7 @@ export const recipes  = [
             }        
     },
     {
-        id: 2,
+        id: "beansoup",
         name: "bean soup",
         title: "Bean Soup",
         category: "Dinner",
@@ -107,7 +107,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 3,
+        id: "wheatsalad",
         name: "wheat salad",
         title: "Wheat Salad",
         category: "Dinner",
@@ -189,7 +189,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 4,
+        id: "pumpkinfritters",
         name: "pumpkin fritters",
         title: "Pumpkin Fritters",
         category: "Dinner",
@@ -260,7 +260,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 5,
+        id: "gingerbeer",
         name: "ginger beer",
         title: "Ginger Beer",
         category: "Drinks",
@@ -308,7 +308,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 6,
+        id: "greenpunch",
         name: "green punch",
         title: "Green Punch",
         category: "Drinks",
@@ -360,7 +360,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 7,
+        id: "rooibosbread",
         name: "rooibos bread",
         title: "Rooibos Bread",
         category: "Breakfast",
@@ -428,7 +428,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 8,
+        id: "cheesebutterbuns",
         name: "cheese butter buns",
         title: "Cheese Butter Buns",
         category: "Breakfast",
@@ -475,7 +475,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 9,
+        id: "coffeetart",
         name: "coffee tart",
         title: "Coffee Tart",
         category: "Desert",
@@ -590,7 +590,7 @@ export const recipes  = [
             } 
     },
     {
-        id: 10,
+        id: "milktart",
         name: "milk tart",
         title: "Milk Tart",
         category: "Desert",

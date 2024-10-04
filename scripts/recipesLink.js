@@ -3,14 +3,11 @@ import { recipes } from "./recipesData.js"
 const filterSection = document.querySelector(".categories");
 const recipeContainer = document.querySelector(".recipesContainer");
 const inputField = document.querySelector(".searchInput");
-const recipeSect = document.querySelector(".recipeContentSection");
-
-let recipeResult;
 
 injectCategories();
 injectRecipes(recipes);
 inputField.addEventListener('keyup', () => searchRecipe());
-injectRecipeContent(recipeResult);
+export let recipeResult;
 
 function injectCategories() {
     let categories = recipes.reduce (function(values, item){
@@ -51,7 +48,7 @@ function injectRecipes(recipes) {
         return `<article class="recipeLink" id="${recipe.id}">
           <img
             src="${recipe.image}"
-            class="recipeImage"
+            class="recipeImage" id="${recipe.id}"
           />
           
             <div class="recipeName">${recipe.title}</div>
@@ -66,31 +63,18 @@ function injectRecipes(recipes) {
 
     allRecipeLinks.forEach(function (recipeLink) {
         recipeLink.addEventListener('click', function() {
-            
             let identity = event.currentTarget.id;
-            recipeResult = recipes.filter(function (recipe) {
-                if (recipe.id === identity) {
-                    return `<div class="pageTitle">${recipe.title}</div>
-                    <section class="recipeSection>
-                        <div class="verticalLine"></div>
-                        <section class="recipeContent">
-                        <img href="${recipe.image}" alt="" title="${recipe.imageRef}"/>
-                        <p>Ingredients<p>
-                        ${recipe.recipeElements.ingredients}
-                        <p>Instructions<p>
-                        ${recipe.recipeElements.instructions}
-                        ${recipe.recipeElements.reference}
-                        </section>
-                    </section>"`;
-                }
+            console.log(identity);
+            let recipeResult = recipes.filter(function (recipe) {
+              if (recipe.id == identity) {
+                return recipe;
+              }
+              
             });
+            recipeContent.innerHTML = `<div class="pageTitle">${recipeContent[0].title}</div>`;
             window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
         });
     })
-}
-
-function injectRecipeContent (recipe) {
-    recipeSect.innerHTML = recipe;
 }
 
 function searchRecipe() {
