@@ -65,13 +65,13 @@ function injectRecipes(recipes) {
         recipeLink.addEventListener('click', function() {
             let identity = event.currentTarget.id;
             console.log(identity);
-            let recipeResult = recipes.filter(function (recipe) {
+            recipeResult = recipes.filter(function (recipe) {
               if (recipe.id == identity) {
                 return recipe;
               }
               
             });
-            recipeContent.innerHTML = `<div class="pageTitle">${recipeContent[0].title}</div>`;
+            
             window.location.href = "/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/recipesFile/recipe.html";
         });
     })
