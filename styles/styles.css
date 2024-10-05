@@ -655,12 +655,13 @@ figure {
     }
 
     .verticalLine {
-        margin-left: 4em;
+        display: none;
     }
 
     .postInstructions, .recipeContent {
-        padding: 0px;
-        margin-right: 7em;
+        padding: 2em;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .recipesPageSection {
