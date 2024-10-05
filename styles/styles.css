@@ -423,7 +423,7 @@ height: auto;
     outline: 1px solid #701F41;
 }
 
-.postPageSection, .essayPageSection, .articlesPageSection, .recipeContentSection {
+.postPageSection, .essayPageSection, .articlesPageSection, .recipeContentSection, .articlePageContent, .designPageContent {
     margin-top: 6em;
 }
 
@@ -448,7 +448,7 @@ height: auto;
     padding: 0px 20em 0px 0px;
 }
 
-.essayContent {
+.essayContent, .textContent {
     font-family: "Roboto", sans-serif;
     background-color: #ffffff;
     outline: solid #701F41;
@@ -522,6 +522,49 @@ figure {
     text-decoration: none;
     margin-bottom: 5px;
     color: #701F41;
+}
+
+.svg1, .svg2 {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    outline: solid #E77373;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    border-radius: 40px;
+    padding: 2em 2em;
+    line-height: 1.5;
+}
+
+#split, #combine {
+    border: none;
+    font-family: "Roboto", sans-serif;
+    background-color: #701F41;
+    color: #ffffff;
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 1em 1em;
+}
+
+#split:hover, #combine:hover{
+    transform: scale(1.05);
+}
+
+.fruitButton {
+    border: none;
+    font-family: "Roboto", sans-serif;
+    background-color: #701F41;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 40px;
+    padding: 0.5em 0.5em;
+    margin: 5px;
+}
+
+.fruitCircle {
+    transition: 0.2s;
 }
 
 @media screen and (max-width: 430px) {

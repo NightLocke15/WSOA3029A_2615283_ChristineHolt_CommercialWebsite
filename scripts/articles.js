@@ -6,7 +6,7 @@ const articles = [
         href: `/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/essay.html`
     },
     {
-        name: "Fruit Sugar Content and Which Ones to Eat in a Low Sugar Diet",
+        name: "Fruit Sugar Content and Which Ones are Better for a Low Sugar Diet",
         description: "",
         href: `/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/article1.html`
     }

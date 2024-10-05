@@ -7,8 +7,9 @@
     <meta name="author" content="Christine Holt">
     <meta name="description" content="Article Page. This page provides an article on the sugar contents of fruit and which ones are better for low sugar diets.">
     <meta name="keywords" content="Article, Low Sugar, Fruits">
-    <title>Fruit Sugar Content and Which Ones to Eat in a Low Sugar Diet</title>
+    <title>Fruit Sugar Content what this means</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <script type="module"> import { navigationBar } from "../scripts/navigation.js" 
         navigationBar("") </script>
     <script type="module"> import { offScreenNavigation } from "../scripts/offScreenMenu.js" 
@@ -30,6 +31,61 @@
             </div>
         </nav>
     </header>
+    <section class="articlePageContent">
+        <div class="pageTitle">Fruit Sugar Content what this means:</div>
+        <section class="textContent">
+            <p>Like most food, all fruits contain sugar. Differening levels of sugar, but they contain sugar. However, th statement 
+                that the sugars contained in fruit can be harmful to a person is a myth <cite>(Gunnars, 2018)</cite> (unless you eat an inhumane amount, but please do not do that). 
+                Fruits are healthy, this remains a fact, and it should be something that is incorporated into your daily diet to help you stay healthy <cite>(Jones, 2019)</cite>. However, 
+                there might be several reasons why one would rather eat lower sugar content fruit. Some diets, like keto, works better when eating fruits with 
+                lower sugar content <cite>(Gunnars, 2018)</cite>, and high sugar content fruit is something someone living with diabetes might want to avoid.
+            </p>
+            <p>
+                To aid in the quest for finding fruit with lower sugar content, showcased below is an interactive visualisation that separates 49 fruit into 
+                lowest, relatively low, relatively high and highest. The <cite>NHS (2022)</cite> states that when trying to eat less sugar, it is ideal to keep sugar 
+                intake to 5 grams per 100 grams of food. However, when eating whole fruits, the body neds to break it down, meaning the sugar does not hit the liver all at once.  
+                This makes the sugar in fruits basically harmless, though its is important for people with diabetes to keep track of the fruits they eat <cite>(Gunnars, 2018)</cite>. If you still want 
+                to lower the sugar intake from fruits, look at fruits with lower sugar content, as seen below when clicking the split button (Each data point shows the sugar content in grams of a fruit per 100 grams compared to each other).
+            </p>
+        </section>
+        <section class="svg1">
+            <button id="split">Split</button>
+            <button id="combine">Combine</button>
+        </section>
+        <section class="textContent">
+            <p>Whether you eat fruit with higher or lower sugar content, it is still significantly more healthy than a lot 
+                of the common snacks and drinks manufactured today. A good example is a specific well known soda, which is notorious for the fact 
+                that it has high sugar levels. In the following visualisation, you can compare a 100 grams of any of the fruit 
+                to a 100 grams of soda. There are some fruits with higher sugar content, but it is important to keep in mind the above mentioned fact that 
+                the sugars in fruit is harmless compared to added fruit. So, even when eating fruits with higher sugar contents, it is still healthier than most 
+                food with added sugar. 
+            </p>
+        </section>
+        <section class="svg2">
+            <div class="options"></div>
+        </section>
+        <section class="textContent">
+            <p>In conclusion, eat fruit. It is healthy, not only because the sugar contents are often lower, but also because the contain 
+                healthy vitamins and minerals, that are important for your health. They make a great snack, as they often satiate the craving 
+                for something sweet without being unhealthy (Gunnars, 2018). But if you want to limit the sugar intake from fruits for whatever reason, 
+                you still have a myriad of delicious fruit to choose from, all with their own great taste and health benefits. It is always good to eat 
+                things in recommended portions, as too much of anything is not a good thing, but if you are craving something sweet, reach for one 
+                of the many fruits available to you. It tastes good, it is good for you, and more often than not, it is good for your wallet.
+            </p>
+            <h5>References:</h5>
+            <p>
+                How to cut down on sugar in your diet (2022) nhs.uk. Available at: <a href="https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/how-to-cut-down-on-sugar-in-your-diet/">https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/how-to-cut-down-on-sugar-in-your-diet/</a> (Accessed: 5 October 2024).
+
+            </p>
+            <p>
+                Gunnars, K.(2018) 'Is Fruit Good or Bad for You?' Healthline. Available at: <a href="https://www.healthline.com/nutrition/is-fruit-good-or-bad-for-your-health">https://www.healthline.com/nutrition/is-fruit-good-or-bad-for-your-health</a> (Accessed: 5 October 2024).
+
+
+            </p>
+            <p>Low-sugar fruits: 8 best fruits for health (2017). Available at: <a href="https://www.medicalnewstoday.com/articles/320078">https://www.medicalnewstoday.com/articles/320078</a> (Accessed: 5 October 2024).</p>
+
+        </section>
+    </section>
     <footer>
         <!--Footer containing important things on website-->
     </footer>
@@ -37,5 +93,7 @@
     <script src="../scripts/app.js"></script>
     <script src="../scripts/footer.js"></script>
     <script src="../scripts/hamburger.js"></script>
+    <script src="../scripts/sugarComparison.js"></script>
+    
 </body>
 </html>
