@@ -1,3 +1,5 @@
+//Looked back on practice classes for d3 to implement these visualisations
+
 //Fetch data from Fruityvice
 d3.json('https://www.fruityvice.com/api/fruit/all').then(data => {
     let sugarData = data.map(datum => ({
@@ -19,7 +21,7 @@ d3.json('https://www.fruityvice.com/api/fruit/all').then(data => {
     fruitCircle(sugarData);
 });
 
-//Create SVG
+//Create SVGs
 const HEIGHT = 700;
 const WIDTH = 1000;
 const MARGIN = 50;

@@ -7,7 +7,7 @@ recipe();
 //Inject recipe into html page
 function recipe() {
     //Fetch recipe information from local storage
-    let myCurrentRecipeString = localStorage.getItem('currentRecipe');
+    let myCurrentRecipeString = localStorage.getItem('currentRecipe'); //local storage explanation: https://medium.com/@cyberbotmachines/how-to-pass-value-from-one-html-page-to-another-using-javascript-3c9ab62df4d
     let myCurrentRecipe = JSON.parse(myCurrentRecipeString);
     console.log(myCurrentRecipe[0].recipeElements.ingredients);
 

@@ -87,7 +87,7 @@ function injectRecipes(recipes) {
             });
             //place recipe information that is relevant to clicked link in the local storage in order to be able to access 
             //it on another html page and in another javascript file
-            localStorage.clear();
+            localStorage.clear(); //local storage explanation: https://medium.com/@cyberbotmachines/how-to-pass-value-from-one-html-page-to-another-using-javascript-3c9ab62df4d
             let myRecipe = recipeResult;
             let myRecipeString = JSON.stringify(myRecipe);
             localStorage.setItem('currentRecipe', myRecipeString);

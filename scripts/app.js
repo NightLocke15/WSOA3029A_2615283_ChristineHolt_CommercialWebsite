@@ -1,4 +1,4 @@
-//Fade in animation for the sectins on the home page.
+//Fade in animation for the sectins on the home page. You tube video: https://www.youtube.com/watch?v=evmu1ABASaU
 
 //This detects when certain elements show up on the screen
 const observer = new IntersectionObserver(function (entries) {
