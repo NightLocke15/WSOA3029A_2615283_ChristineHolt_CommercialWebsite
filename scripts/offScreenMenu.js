@@ -8,6 +8,7 @@ const offMenu = [
     {name: "Post", href: `${root}recipesFile/postARecipe.html`},
 ]
 
+//Create a small menu that will be used when on mobile instead of the long navigation on the top of the screen
 export function offScreenNavigation(currentPage) {
     const nav = document.querySelector("#offScreenMenu")
     let buttons = offMenu.map(function (menuItem) {

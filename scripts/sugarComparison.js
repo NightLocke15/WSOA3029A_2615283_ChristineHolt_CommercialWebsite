@@ -25,16 +25,20 @@ d3.json('https://www.fruityvice.com/api/fruit/all').then(data => {
 const HEIGHT = 700;
 const WIDTH = 1000;
 const MARGIN = 50;
+
+//Create 1st visualisation svg
 let svg = d3.select('.svg1')
 .append('svg')
 .attr('height', HEIGHT)
 .attr('width', WIDTH);
 
+//Create 2nd visualisation svg
 let otherSvg = d3.select('.svg2')
 .append('svg')
 .attr('height', HEIGHT - 200)
 .attr('width', WIDTH);
 
+//add a circle that will showcase the fruit separately
 otherSvg.append('circle')
 .attr('class', 'fruitCircle')
 .attr('cx', 600)
@@ -117,6 +121,7 @@ function createCircles(data) {
     })
 }
 
+//Create the coke circle
 function cokeCircle(data) {
     otherSvg.selectAll()
     .data(data)
@@ -128,6 +133,7 @@ function cokeCircle(data) {
     .style("fill", "#000")
 }
 
+//Set the fruit circle according to the button pressed
 function fruitCircle(data) {
     let fruits = data.map(function(datum) {
         return `<button class="fruitButton" id="${datum.id}">${datum.name}</button>`
@@ -184,6 +190,7 @@ function legendColour(data) {
     }
 }
 
+//legend for first svg
 svg.append('g')
 .selectAll()
 .data(sugarContent)
@@ -208,6 +215,7 @@ svg.append('g')
 .style('fill', '#000')
 .text(d => d);
 
+//legend for second svg
 otherSvg.append('g')
 .selectAll()
 .data(names)
@@ -232,7 +240,7 @@ otherSvg.append('g')
 .style('fill', '#000')
 .text(d => d);
 
-//Create tooltips
+//Create tooltips for both svgs
 let toolTip = d3.select('.svg1')
 .append('div')
 .style('color', '#000')
