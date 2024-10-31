@@ -1,2 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.designPageContent {
+    margin-top: 6em;
+}
+
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    outline: solid #701F41;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+    border-radius: 40px;
+    padding: 2em 3em;
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+}
+
+.aboutTitle {
+    flex: 10%;
+    font-family: "Life Savers", serif;
+    text-align: center;
+    font-size: 30px;
+    color: #701F41;
+    font-weight: bold;
+}
+
+.aboutCont {
+    flex: 70%;
+}
+
+.designButt {
+    flex: 20%;
+    font-family: "Roboto", sans-serif;
+    background-color: #701F41;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+}
+
+.designButt:hover {
+    padding: 15px 28px;
+}
+
+.wireframeContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+.wireframe {
+    flex:1;
+    width: 70%;
+    height: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text {
+    flex: 1;
+}
+
+.subTitle {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.textContent {
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    outline: solid #701F41;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    border-radius: 40px;
+    padding: 2em 2em;
+    line-height: 1.5;
+    
+}
+
+@media screen and (max-width: 430px) { 
+    .wireframe {
+        flex:1;
+        width: 100%;
+        height: 100%;
+    } 
+}
+
+@media screen and (max-width: 1040px) and (min-width: 431px) { 
+    .wireframe {
+        flex:1;
+        width: 100%;
+        height: 100%;
+    } 
+}
+
