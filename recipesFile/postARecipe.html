@@ -9,6 +9,7 @@
     <meta name="keywords" content="Recipe, Post, Email">
     <title>Post a Recipe</title>
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/overallStyles.css">
     <script type="module"> import { navigationBar } from "../scripts/navigation.js" 
         navigationBar("") </script>
     <script type="module"> import { offScreenNavigation } from "../scripts/offScreenMenu.js" 
@@ -38,18 +39,10 @@
             <section class="postInstructions">
                 <p>Do you want to add your recipe to our extensive archives? Shoot us a message below, 
                     and after reviewing it, we will add it to our lists.</p>
-                <p>Please format your email as follows:</p>
-                <ul>
-                    <li>The recipe title.</li>
-                    <li>An image of the dish (optional)</li>
-                    <li>The recipe ingredients.</li>
-                    <li>The recipe instructions.</li>
-                    <li>Any other notes for the recipe (optional)</li>
-                    <li>Your name or pseudonym.</li>
-                </ul>
-                <p>Please send your message to the following email:</p>
-                <p>nightlock.stuff@gmail.com</p>
-                <p>We look forward to your message!</p>
+                    <form class="input-form">
+                        <input type="text" class="searchInput" placeholder="search..." />
+                    </form>
+                
             </section>
         </section>
     </section>
