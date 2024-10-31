@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    color: black;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    filter: drop-shadow(0px 3px 2px rgb(183, 183, 183));
+    z-index: 1;
+}
+
+body {
+    font-family: "Life Savers", serif;
+    margin: 0;
+}
+
+.title {
+    flex: 70%;
+    padding: 0.2em;
+    line-height: 1;
+    font-size: 35px;
+    font-weight: bold;
+    color: #701F41;
+    text-decoration: none;
+}
+
+nav {
+    flex: 30%;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0.5em;
+    margin-top: 0.5em;
+}
+
+#otherButton {
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: "Life Savers", serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #701F41;
+    padding: 5px;
+    margin-right: 5px
+}
+
+#currentButton {
+    flex: 1;
+    text-decoration: none;
+    text-align: center;
+    background-color: #E77373;
+    color: #ffffff;
+    font-family: "Life Savers", serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+#otherButton:hover {
+    text-decoration: none;
+    background-color: #E77373;
+    color: #ffffff;
+    border-radius: 4px;
+}
