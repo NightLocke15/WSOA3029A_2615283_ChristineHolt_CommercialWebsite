@@ -40,9 +40,18 @@
                 <p>Do you want to add your recipe to our extensive archives? Shoot us a message below, 
                     and after reviewing it, we will add it to our lists.</p>
                     <form class="input-form">
-                        <input type="text" class="searchInput" placeholder="search..." />
+                        <input type="text" class="nameInput" placeholder="Name" />
                     </form>
-                
+                    <p class="nameError"></p>
+                    <form class="input-form">
+                        <input type="text" class="emailInput" placeholder="Email" />
+                    </form>
+                    <p class="emailError"></p>
+                        <textarea  class="messageInput" placeholder="Message"></textarea>
+                        <p class="messageError"></p>
+                        <p class="success"></p>
+                    <button class="submit">Submit</button>                  
+                    
             </section>
         </section>
     </section>
@@ -53,5 +62,6 @@
     </footer>
     <script src="../scripts/footer.js"></script>
     <script src="../scripts/hamburger.js"></script>
+    <script src="../scripts/post.js"></script>
 </body>
 </html>

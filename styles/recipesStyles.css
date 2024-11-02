@@ -42,6 +42,10 @@
     margin-left: 18em;
 }
 
+.searchInput::placeholder {
+    font-family:"Roboto", sans-serif;
+}
+
 .horizontalDivider {
     background-color: #E77373;
     height: 1px;
@@ -131,6 +135,71 @@ height: auto;
     margin-top: 1em;
     font-family: "Roboto", sans-serif;
     padding: 0px 20em 0px 0px;
+}
+
+.nameInput, .emailInput {
+    padding: 0.5rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    border-color: #701F41;
+    letter-spacing: 1px;
+    width: 40em;
+}
+
+.nameInput::placeholder, .emailInput::placeholder {
+    font-family:"Roboto", sans-serif;
+}
+
+.messageInput {
+    padding: 0.5rem;
+    background: #ffffff;
+    border-radius: 1rem;
+    border-color: #701F41;
+    letter-spacing: 1px;
+    width: 40em;
+    height: 15em;
+}
+
+.messageInput::placeholder {
+    font-family:"Roboto", sans-serif;
+}
+
+textarea {
+    font-family:"Roboto", sans-serif;
+    font-size: smaller;
+}
+
+input {
+    font-family:"Roboto", sans-serif;
+}
+
+.submit {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 40px;
+    background-color: #701F41;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    margin-left: 27em;
+    transition: 0.5s;    
+}
+
+.submit:hover {
+    padding: 15px 28px;
+}
+
+.nameError, .emailError, .messageError {
+    font-size: small;
+    color: #701F41;
+}
+
+.success {
+    font-size: small;
+    color: #701F41;
 }
 
 @media screen and (max-width: 430px) { 
