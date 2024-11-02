@@ -33,16 +33,11 @@ function injectSections () {
     //map the sections into a variable
     let sections = homePageSections.map(function (section) {
         const { id, name, description, href, button } = section;
-        return `<article id="section">
+        return `<a href="${href}"><article id="section">
             <div class="sectionTitle">${name}</div>
             <div class="descAndButt">
             <p id="description">${description}</p>
-            <div class="separationLine"></div>
-            <div class="button">
-            <a class="buttonLink" href="${href}">${button}</a>
-            </div>
-            </div>
-        </article>`
+        </article></a>`
     }).join("");
 
     //Use the variable to inject the sections into the html page.
