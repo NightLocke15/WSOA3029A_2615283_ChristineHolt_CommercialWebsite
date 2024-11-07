@@ -1,11 +1,13 @@
 //Article links data like titles, descriptions and links
 const articles = [
     {
+        id: "article-1",
         name: "Essay: Critical Analysis of the Effectiveness of Data Visualisations",
         description: "This essay goes in depth on the effectiveness of the data visualisations in an NBC News article.",
         href: `/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/essay.html`
     },
     {
+        id: "article-2",
         name: "Fruit Sugar Content and Which Ones are Better for a Low Sugar Diet",
         description: "This article talks on the sugar content of fruit and how all fruits are healthy, but it shows which fruits are better based on whether someone would like to eat a lower sugar diet.",
         href: `/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/article1.html`
@@ -21,7 +23,7 @@ injectArticles();
 function injectArticles() {
     //map the info into a variable
     let articleLinks = articles.map(function (article) {
-        return `<a href="${article.href}"><article class="articleLink">
+        return `<a href="${article.href}" aria-label="${article.id}"><article class="articleLink">
         <div class="articleTitle">${article.name}</div>
         <p>${article.description}</p>
         </article></a>`

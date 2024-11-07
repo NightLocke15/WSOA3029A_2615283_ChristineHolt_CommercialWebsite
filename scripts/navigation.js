@@ -19,7 +19,7 @@ const navList = document.querySelector(".navigation-buttons");
 export function navigationBar(currentPage) {
     //map the links into a variable
     let buttons = menu.map(function (menuItem) {
-        return `<a class="nav-button" id="${menuItem.name}" href="${menuItem.href}">${menuItem.name}</a>`
+        return `<a class="nav-button" id="${menuItem.name}" href="${menuItem.href}" aria-label="${menuItem.name}">${menuItem.name}</a>`
     }).join("");
 
     //use the variable to inject the elements into the navigation list

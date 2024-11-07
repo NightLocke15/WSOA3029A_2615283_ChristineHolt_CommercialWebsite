@@ -56,7 +56,7 @@ function injectCategories() {
 function injectRecipes(recipes) {
     //Recipes mapped into variable
     let recipeItems = recipes.map(function (recipe) {
-        return `<article class="recipeLink" id="${recipe.id}">
+        return `<article class="recipeLink" id="${recipe.id}" aria-label="${recipe.id}">
           <img
             src="${recipe.image}"
             class="recipeImage" id="${recipe.id}" alt="${recipe.imageRef}" title="${recipe.imageRef}"

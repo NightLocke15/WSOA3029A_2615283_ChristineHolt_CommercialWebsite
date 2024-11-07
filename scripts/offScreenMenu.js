@@ -12,7 +12,7 @@ const offMenu = [
 export function offScreenNavigation(currentPage) {
     const nav = document.querySelector("#offScreenMenu")
     let buttons = offMenu.map(function (menuItem) {
-        return `<a class="offScreenNav" id="${menuItem.name}" href="${menuItem.href}">${menuItem.name}</a>`
+        return `<a class="offScreenNav" id="${menuItem.name}" href="${menuItem.href}" aria-label="${menuItem.name}">${menuItem.name}</a>`
     }).join("");
 
     nav.innerHTML = buttons;

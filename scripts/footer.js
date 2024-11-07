@@ -29,7 +29,7 @@ function injectFooter() {
     //Map the data into a variable
     const footerLinks = footerItems.map(function (footerItem) {
         const { name, href } = footerItem;
-        return `<a class="footerLink" href="${href}">${name}</a>`
+        return `<a class="footerLink" href="${href}" aria-label="${name}">${name}</a>`
     }).join("");
 
     //Use the variable to inject the links into the footer
