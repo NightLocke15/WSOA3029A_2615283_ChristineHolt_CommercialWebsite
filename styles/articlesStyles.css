@@ -36,6 +36,7 @@ figure {
     border-radius: 40px;
     padding: 2em 2em;
     line-height: 1.5;
+    transition: 0.5s;
 }
 
 .articleLink:hover {

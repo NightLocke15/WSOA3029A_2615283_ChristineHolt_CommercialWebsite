@@ -126,7 +126,7 @@
 #description {
     font-family: "Roboto", sans-serif;
     font-size: 22px;
-    margin-right: 50px;
+    margin-right: 2em;
     line-height: 1.5;
 }
 
@@ -170,6 +170,10 @@
         display: none;
     }
 
+    .navArrowTwo {
+        display: none;
+    }
+
     #section {
         padding: 3em;
     }
@@ -180,47 +184,11 @@
         font-weight: bold;
     }
     
-    .descAndButt {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
     #description {
-        flex: 1;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
-        width: 260px;  
         margin-right: 50px;
         line-height: 1.5;
-    }
-    
-    .button {
-        flex: 1;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1em;
-        margin-bottom: auto;
-        text-align: center;
-    }
-    
-    .buttonLink {
-        font-family: "Roboto", sans-serif;
-        background-color: #701F41;
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 16px;
-        padding: 15px;
-        border-radius: 40px;
-        transition: 0.5s;
-    }
-    
-    .buttonLink:hover {
-        padding: 15px 28px;
-    }
-    
-    .separationLine {
-        display: none;
     }
 }
 
@@ -255,6 +223,10 @@
         display: none;
     }
 
+    .navArrowTwo {
+        display: none;
+    }
+
     #section {
         padding: 3em;
     }
@@ -265,46 +237,10 @@
         font-weight: bold;
     }
     
-    .descAndButt {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
     #description {
-        flex: 1;
         font-family: "Roboto", sans-serif;
         font-size: 16px;
-        width: 500px;  
         margin-right: 50px;
         line-height: 1.5;
-    }
-    
-    .button {
-        flex: 1;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1em;
-        margin-bottom: auto;
-        text-align: center;
-    }
-    
-    .buttonLink {
-        font-family: "Roboto", sans-serif;
-        background-color: #701F41;
-        color: #ffffff;
-        text-decoration: none;
-        font-size: 16px;
-        padding: 15px;
-        border-radius: 40px;
-        transition: 0.5s;
-    }
-    
-    .buttonLink:hover {
-        padding: 15px 28px;
-    }
-    
-    .separationLine {
-        display: none;
     }
 }
