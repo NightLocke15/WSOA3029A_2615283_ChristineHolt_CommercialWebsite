@@ -78,8 +78,8 @@
                 <img class="wireframe" src="../images/PostRecipe.png" alt="Wire frame of instructions to post and recipe on the website with a title and the instructions" title="Post a Recipe Wireframe">
                 <div class="text">
                     <p>16. <u>Post a Recipe Page</u>: This page enables the user to send a recipe to the creator, that after review, might be added to the archives of recipes on the website. This page gives a short description explaining the purpose to the user. </p>
-                    <p>17. <u>Post a Recipe instructions</u>: clear instructions given to the user in order to be able to send their recipes to the creator to possibly have it on the website.</p>
-                    <p>18. <u>Further notes</u>: Initially this would have been an input form that the user could fill in and send their recipes, however, there are a few reasons I decided against this. First, is a safety concern. I do not know enough about website security at this moment in time to mess with things that could put others at risk. Secondly, scope. I feel this is outside of the scope I can currently achieve. </p>
+                    <p>17. <u>Post a Recipe</u>: The user can submit a recipe. They have to fill in their name, their email address and the message they want to send. If not all of the fields are entered, the message cannot be submitted, and the form will show the user that this is the case through a message. (It does not actually send anything at this stage.)</p>
+                    <p>18. <u>Submit Button</u>: When the user submits their form, the form will either confirm that everything is correct, or an error message wil pop up in the relevant place. I chose to stick with text, to make it as clear as possible, and to try and avoid confusion. </p>
                 </div>
             </div>
             <div class="wireframeContainer">
@@ -90,7 +90,9 @@
                 </div>
             </div>
             <div class="wireframeContainer">
-                <img class="wireframe" src="../images/Wireframe6.png" alt="Wireframe of the article and how it will be laid out with the text and the data visualisations placed accordingly" title="Article Wireframe">
+                <img class="wireframe" src="../images/article1.png" alt="Wireframe of the article and how it will be laid out with the text and the data visualisations placed accordingly" title="Article Wireframe">
+                <img class="wireframe" src="../images/article2.png" alt="Wireframe of the article and how it will be laid out with the text and the data visualisations placed accordingly" title="Article Wireframe">
+                
                 <div class="text">
                     <p>21. <u>Heading and written parts of the article</u>: The heading is at the top of the page, in the center to bring attention to it. The written parts of the article will have a border around it in a darker maroon colour. This will separate it from the rest of the page and the other parts of the article.</p>
                     <p>22. <u>Data Visualisations</u>: The data visualisations will have a salmon pink border around them in order to separate them from the rest of the article, and so they have a clear container. </p>
@@ -113,7 +115,7 @@
             <div class="wireframeContainer">
                 <div class="text">
                     <p>26. <u>Design Page</u>: This page will display all the design choices and reasoning for this website.</p>
-                    <p>27. <u>Content</u>: The written content will be descriptions and reasonings for certain decisions. The wireframes and style guide will visually showcase the plans for the website with small descriptions that explain the elements found in the website. (I am considering just adding links to the Figma Pages for the wireframes and style guide, however, I might separate these designs into sections to easier display it on the website).</p>
+                    <p>27. <u>Content</u>: The written content will be descriptions and reasonings for certain decisions. The wireframes and style guide will visually showcase the plans for the website with small descriptions that explain the elements found in the website.</p>
                 </div>
             </div>
             <div class="wireframeContainer">
@@ -139,7 +141,8 @@
                 </ul>
             </p>
             <p class="subTitle">Style Guide</p>
-            <img class="wireframe" src="../images/Styleguide.png" alt="Style guide that shows the decisions made for each styling decision in the website" title="Style Guide">
+            <div class="wireframeContainer"><img class="styleGuide" src="../images/Styleguide.png" alt="Style guide that shows the decisions made for each styling decision in the website" title="Style Guide">
+            </div>
             <p>Text on Style Guide:
                 <ul>
                     <li>Typography
@@ -183,29 +186,21 @@
                     </li>
                 </ul>
             </p>
-            <p class="subTitle">Some things not yet implemented and things to be implemented moving forward:</p>
+            <p class="subTitle">What I was unable to implement:</p>
             <p>
                 <ul>
-                    <li>The design page is not formatted the way I want it to be formatted, so I will need to go back to that</li>
-                    <li>The Recipe index page in the mobile design does not have a separate filter button yet. i was struggling to implement some of these things and ran out of time.</li>
-                    <li>The Data visualisations in the articles page need some work, it is not displayed in the way that I want it to be. i might go back and change the direction I am going in with those.</li>
-                    <li>I would like to do further research on the information in my 'artcile' of the sugar content in fruit</li>
-                    <li>I want to implement the buttons in the second visualisation as a drop down menu</li>
+                    <li>I was not able to implement all the datavisualisations or visualise them the way I wanted to. Because the original API I was using (FruityVice) no longer works, I had to fins a different API to use. This proved extremely difficult, as there was either no API that contained the dat I would need, or it is an API I would need to pay to be able to use. Because of this, and the fact that I would not be able to restart the website I made, I decided to use something completely different, the PokeAPI. I wanted to make a funny visualisation to do with the edibility of pokemon, and compare them to each other. This, however, proved very dificult with the time I had and my current abilities. Thus, I implemented the data visualisations that are currently on this website, and I can safely say that I am unhappy with them. But it was what I was able to implement with the time I had.</li>
                 
                 </ul>
             </p>
             <p class="subTitle">Data Visualisation Choices:</p>
                 <p>
                     <ul>
-                        <li>I chose the Fruityvice API, because the theme of my website is food and recipes, and this is ideal for the style and theme of my website. It provides a lot of information on 49 different fruits, from the name, genus, family to nutritional values.</li>
-                        <li>I wanted to use a visualisation that compares the sugar content of each of the fruits to each other, so I used the bubble graph where all the circles are next to each other in different colours that indicates different information.</li>
-                        <li>In this case, the colours indicate the sugar level in the fruit.</li>
-                        <li>These bubbles also show the name and actual values in a tooltip when it is hovered over.</li>
-                        <li>When the split button is pressed, the bubbles are separated according to their sugar level, making it easier to differentiate which fruits had lower or higher sugar levels.</li>
-                        <li>The other visualisation compares the fruit to coke (or soda) in order to show the sugar level in reference to the coke.</li>
-                        <li>Each button shows the fruit next to the coke bubble, showing proportionally what the difference is.</li>
-                        <li>I would like to go back to these visualisations as I feel they can be designed better, especially the second one.</li>
-                        <li>I ran out of time, so the article does not contain as much content as I would like, so i plan on going back and doing more in depth research on what I am trying to convey in these visualisations and in the article as a whole. The current research is referenced in the article itself.</li>
+                        <li>I chose the PokeAPI, and used the data to the best of my ability, and tried to theme it to my website.</li>
+                        <li>I wanted to use a visualisation that compares the edibility of each pokemon, but this turned out te be quite hard.</li>
+                        <li>In the first visualisation each stat is represented by a different colour.</li>
+                        <li>The other visualisation calculates how many portions of food you would get from the chosen pokemon. I chose the colour I chose because it was contrasting to the background and it is easier to view.</li>
+                        
                     </ul>
                 </p>
         </section>

@@ -8,6 +8,12 @@ const articles = [
     },
     {
         id: "article-2",
+        name: "Critical Reflection:",
+        description: "Critical reflection on my website, the challenges I faced and the practices I followed.",
+        href: `/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/criticalEssay.html`
+    },
+    {
+        id: "article-3",
         name: "Pokemon Stats and Portions:",
         description: "How much you would be able to eat when you catch and eat a Pokemon, because API's hate me.",
         href: `/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/article1.html`

@@ -1,13 +1,20 @@
+//bubbles and force simulations inspired by class excercises
+
+//basic variables
 const pokemonInput = document.querySelector(".pokeInput");
 const button = document.querySelector("button");
 const rScale = d3.scaleSqrt().domain([1, 1000]).range([10, 300]);
 
+//event listener on button to submit pokemon
 button.addEventListener('click', function() {
     let pokeInput = pokemonInput.value.toLowerCase();
+
+    //fetching the data from the API
     d3.json(`https://pokeapi.co/api/v2/pokemon/${pokeInput}`).then(function(data) {
         d3.selectAll('#dataCircle').remove();
         let pokeData = [];
 
+        //pushing needed data to array
         pokeData.push({name: data.name});
         pokeData.push({experience: data.base_experience});
         pokeData.push({weight: data.weight});
@@ -27,6 +34,7 @@ button.addEventListener('click', function() {
             });
         }
 
+        //displaying relevant data
         let dataText = document.querySelector('.data');
         dataText.innerHTML = `<ul>
         <li>Weight: ${data.weight}</li>
@@ -46,16 +54,19 @@ button.addEventListener('click', function() {
     })
 })
 
+//Dimensions
 const HEIGHT = 700;
 const WIDTH = 1500;
 const MARGIN = 50;
 
+//creating SVGs
 let svg = d3.select('.svgOne').attr('height', HEIGHT)
 .attr('width', WIDTH);
 
 let svgTwo = d3.select('.svgTwo').attr('height', HEIGHT)
 .attr('width', WIDTH);
 
+//creating force simuations
 const forceX = d3.forceX(WIDTH/2).strength(0.3);
 const forceY = d3.forceY(HEIGHT/2).strength(0.3);
 const collide = d3.forceCollide(d => rScale(d.weight+0.1 || d.speed + 0.1 || d.hp + 0.1 || d.attack + 0.1 || d.defense + 0.1) + 2);
@@ -68,7 +79,7 @@ const simulation = d3.forceSimulation()
 .force("manyBody", manyBody);
 
 
-
+//creating circles for base stats
 function createCircles(data) {
     let circles = svg.selectAll()
     .data(data).enter()
@@ -84,6 +95,7 @@ function createCircles(data) {
     });
 }
 
+//creating second simulations
 const forceX2 = d3.forceX(WIDTH/2).strength(0.08);
 const forceY2 = d3.forceY(HEIGHT/2).strength(0.08);
 const collide2 = d3.forceCollide(d => rScale(d.weight+0.1 || d.speed + 0.1 || d.hp + 0.1 || d.attack + 0.1 || d.defense + 0.1) + 2);
@@ -94,6 +106,8 @@ const simulation2 = d3.forceSimulation()
 .force("y", forceY2)
 .force("forceCollide", collide2)
 .force("manyBody", manyBody2);
+
+//creating bubbles for portion ammounts
 
 function createPortions(data) {
     let circles = svgTwo.selectAll()
@@ -109,6 +123,7 @@ function createPortions(data) {
     });
 }
 
+//setting the colours of the stat bubbles
 function setColour(d1) {
     if (d1 == "poison") {
         return "#701F41"
@@ -157,6 +172,7 @@ function setColour(d1) {
 
 const stats = ['HP', 'Speed', 'Attack', 'Defense', 'Weight'];
 
+//creating a legend
 function legendColour(data) {
     if (data == 'HP') {
         return '#be67db';
@@ -175,6 +191,7 @@ function legendColour(data) {
     }
 }
 
+//Adding legends
 svg.append('g')
 .selectAll()
 .data(stats)
@@ -200,7 +217,7 @@ svg.append('g')
 .text(d => d);
 
 
-let toolTip = d3.select('.svgOne')
+/*let toolTip = d3.select('.svgOne')
 .append('div')
 .style('color', '#000')
 .style('background-color', '#fff')
@@ -224,4 +241,4 @@ function tipMove() {
 
 function tipGone() {
     toolTip.style('opacity', 0);
-}
+}*/
