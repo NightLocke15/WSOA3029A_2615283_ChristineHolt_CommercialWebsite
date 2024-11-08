@@ -8,8 +8,8 @@ const articles = [
     },
     {
         id: "article-2",
-        name: "Fruit Sugar Content and Which Ones are Better for a Low Sugar Diet",
-        description: "This article talks on the sugar content of fruit and how all fruits are healthy, but it shows which fruits are better based on whether someone would like to eat a lower sugar diet.",
+        name: "Pokemon Stats and Portions:",
+        description: "How much you would be able to eat when you catch and eat a Pokemon, because API's hate me.",
         href: `/WSOA3029A_2615283_ChristineHolt_CommercialWebsite/articles/article1.html`
     }
 ]
