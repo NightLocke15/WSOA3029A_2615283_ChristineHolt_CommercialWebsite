@@ -85,13 +85,12 @@ function createCircles(data) {
     .data(data).enter()
     .append('circle')
     .attr('r', d => rScale(d.weight+0.1 || d.speed + 0.1 || d.hp + 0.1 || d.attack + 0.1 || d.defense + 0.1)).attr('id', "dataCircle")
-    .style('fill',d=>setColour(d)).style("stroke", "#000").on('mouseover', (e, datum) => tipVisible(datum))
-    .on('mousemove', tipMove).on('mouseout', tipGone);
+    .style('fill',d=>setColour(d)).style("stroke", "#000");
 
     simulation.nodes(data).on('tick', function() {
         circles.attr("cx", d => d.x)
         .attr("cy", d => d.y);
-        simulation.alphaTarget(0.3).restart()
+        simulation.alphaTarget(0.3).restart();
     });
 }
 
@@ -119,7 +118,7 @@ function createPortions(data) {
     simulation2.nodes(data).on('tick', function() {
         circles.attr("cx", d => d.x)
         .attr("cy", d => d.y);
-        simulation2.alphaTarget(0.3).restart()
+        simulation2.alphaTarget(0.3).restart();
     });
 }
 
@@ -184,10 +183,10 @@ function legendColour(data) {
         return '#4a2573';
     }
     else if (data == 'Defense') {
-        return '#E77373'
+        return '#E77373';
     }
     else if (data == 'Weight') {
-        return '#701F41'
+        return '#701F41';
     }
 }
 
