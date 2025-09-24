@@ -28,7 +28,6 @@ header {
 body {
     font-family: "Life Savers", serif;
     margin: 0;
-    background-color: #ffffff;
     background-image: url("../images/BackgroundImage.png");
 }
 
@@ -155,7 +154,7 @@ footer {
 }
 
 #offScreenMenu.active {
-    right: 0;
+    right: 60px;
 }
 
 .offScreenNav {

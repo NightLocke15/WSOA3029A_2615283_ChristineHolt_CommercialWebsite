@@ -59,7 +59,7 @@
 .navArrow {
     position: absolute;
     top: 500px;
-    right: 720px;
+    right: 50%;
     width: 50px;
     height: 50px;
     border-left: 3px solid;
@@ -74,7 +74,7 @@
 .navArrowTwo {
     position: absolute;
     top: 520px;
-    right: 720px;
+    right: 50%;
     width: 50px;
     height: 50px;
     border-left: 3px solid;
